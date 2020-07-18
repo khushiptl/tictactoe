@@ -1,15 +1,44 @@
 #board{
-    padding-top: 3rem;
+    padding-top: 2rem;
     text-align: center;
     font-family: monospace;
+    height: 25px;
+    }    
+h1{
+    margin-top: 1em;
+    background-color: darkseagreen;
+    border-color: darkseagreen;
+    text-shadow:5px 5px 5px darkslategray;
+    font-size: 30px;
     
-}    
-
+    
+}
 .row{
     clear: both;
     width: 302px;
     margin: 0 auto;
 }
+button{
+    display: inline-block;
+    background-color: #3e8e41;
+    padding: 15px 25px;
+    margin-top: 1em;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: 24px;
+    opacity: 0.6;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+.button:active {
+    opacity: 1;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
  .row > div {
      float: left;
@@ -19,9 +48,17 @@
      line-height: 100px;
      font-size: 75px;
      background-color: darkcyan;
+     border-radius: 12px;
      
  }
+ .row > div:active{
+    opacity: 1;
+    box-shadow: 0 5px darkcyan;
+    transform: translateY(4px);
+
+ }
  .bottom{
+   
      border-top: 1px solid black;
  }
  .top{
@@ -33,3 +70,32 @@
  .right{
      border-left: 1px solid black;
  }
+ .winner {
+     color: brown;
+     margin: 20px;
+     padding: 20px;
+     font-size: 30px;
+     height: default;
+     width: default;
+     background-size: cover;
+     -webkit-animation: winner 1s ease-in-out infinite alternate;
+     -moz-animation: winner 1s ease-in-out infinite alternate;
+     
+ }
+ @-webkit-keyframes winner {
+   from{
+       text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 40px rgb(51, 48, 48), 0 0 50px rgb(51, 48, 48), 0 0 60px rgb(51, 48, 48), 0 0 70px rgb(51, 48, 48), 0 0 80px rgb(51, 48, 48);
+    }
+    to{
+        text-shadow: 0 0 10px #fff, 0 0 20px rgb(51, 48, 48), 0 0 30px rgb(51, 48, 48), 0 0 40px  rgb(51, 48, 48), 0 0 50px rgb(51, 48, 48), 0 0 60px rgb(51, 48, 48), 0 0 70px rgb(51, 48, 48);
+    }
+   }
+ 
+.tittle {
+    color: darkblue;
+    size: 4em;
+}
+html{
+    background-color: darkseagreen;
+}
+
